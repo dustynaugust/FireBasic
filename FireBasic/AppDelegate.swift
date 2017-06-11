@@ -91,6 +91,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate{
                     self.databaseRef.child("users").child(user!.uid).child("name").setValue(user?.displayName)
                     self.databaseRef.child("users").child(user!.uid).child("email").setValue(user?.email)
                 }
+                
                 self.window?.rootViewController?.performSegue(withIdentifier: "SegueToWeatherViewController", sender: nil)
             })
             
