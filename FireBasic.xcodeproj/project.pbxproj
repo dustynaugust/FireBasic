@@ -10,10 +10,10 @@
 		2B608A63B109367CC6500F42 /* Pods_FireBasic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7C11DDC067A610472091CD /* Pods_FireBasic.framework */; };
 		3E3799DA1EECB7BF0066149B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E3799D91EECB7BF0066149B /* GoogleService-Info.plist */; };
 		3ED895F31EECB5AD00DB56E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED895F21EECB5AD00DB56E7 /* AppDelegate.swift */; };
-		3ED895F51EECB5AD00DB56E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED895F41EECB5AD00DB56E7 /* ViewController.swift */; };
 		3ED895F81EECB5AD00DB56E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED895F61EECB5AD00DB56E7 /* Main.storyboard */; };
 		3ED895FA1EECB5AD00DB56E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED895F91EECB5AD00DB56E7 /* Assets.xcassets */; };
 		3ED895FD1EECB5AD00DB56E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED895FB1EECB5AD00DB56E7 /* LaunchScreen.storyboard */; };
+		3EE16A121EECBA6F000F0BB6 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE16A111EECBA6F000F0BB6 /* WeatherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,11 +22,11 @@
 		3E3799D91EECB7BF0066149B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3ED895EF1EECB5AD00DB56E7 /* FireBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ED895F21EECB5AD00DB56E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3ED895F41EECB5AD00DB56E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3ED895F71EECB5AD00DB56E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3ED895F91EECB5AD00DB56E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3ED895FC1EECB5AD00DB56E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3ED895FE1EECB5AE00DB56E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EE16A111EECBA6F000F0BB6 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		AF0A6AB51DB1E0B2A6189D80 /* Pods-FireBasic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireBasic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireBasic/Pods-FireBasic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,12 +64,12 @@
 			isa = PBXGroup;
 			children = (
 				3ED895F21EECB5AD00DB56E7 /* AppDelegate.swift */,
-				3ED895F41EECB5AD00DB56E7 /* ViewController.swift */,
 				3ED895F61EECB5AD00DB56E7 /* Main.storyboard */,
 				3ED895F91EECB5AD00DB56E7 /* Assets.xcassets */,
 				3ED895FB1EECB5AD00DB56E7 /* LaunchScreen.storyboard */,
 				3ED895FE1EECB5AE00DB56E7 /* Info.plist */,
 				3E3799D91EECB7BF0066149B /* GoogleService-Info.plist */,
+				3EE16A111EECBA6F000F0BB6 /* WeatherViewController.swift */,
 			);
 			path = FireBasic;
 			sourceTree = "<group>";
@@ -215,8 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ED895F51EECB5AD00DB56E7 /* ViewController.swift in Sources */,
 				3ED895F31EECB5AD00DB56E7 /* AppDelegate.swift in Sources */,
+				3EE16A121EECBA6F000F0BB6 /* WeatherViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
