@@ -13,6 +13,8 @@ import GoogleSignIn
 
 class AuthViewController: UIViewController, GIDSignInUIDelegate {
 
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var gidSignInButtonOutlet: GIDSignInButton!
     
     @IBOutlet weak var signOutButtonOutlet: UIButton!
@@ -25,6 +27,7 @@ class AuthViewController: UIViewController, GIDSignInUIDelegate {
         
         
         // Do any additional setup after loading the view.
+      
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,6 +35,22 @@ class AuthViewController: UIViewController, GIDSignInUIDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func signInButtonTapped(_ sender: Any) {
+        
+        
+        if let email = emailTextField.text, let password = passwordTextField.text {
+            Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+                
+            }
+        }
+        
+        
+    }
+    
+    @IBAction func signUpButtonTapped(_ sender: Any) {
+        
+        self.performSegue(withIdentifier: "PresentSignUpViewController", sender: self)
+    }
     
     
     @IBAction func signOutButtonTapped(_ sender: Any) {

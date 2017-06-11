@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B608A63B109367CC6500F42 /* Pods_FireBasic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7C11DDC067A610472091CD /* Pods_FireBasic.framework */; };
+		3E0CF2F41EEDF91F00D99EDF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0CF2F31EEDF91F00D99EDF /* SignUpViewController.swift */; };
 		3E3799DA1EECB7BF0066149B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E3799D91EECB7BF0066149B /* GoogleService-Info.plist */; };
 		3ED895F31EECB5AD00DB56E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED895F21EECB5AD00DB56E7 /* AppDelegate.swift */; };
 		3ED895F81EECB5AD00DB56E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED895F61EECB5AD00DB56E7 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		069CF9A67543B970C354D0D5 /* Pods-FireBasic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireBasic.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireBasic/Pods-FireBasic.release.xcconfig"; sourceTree = "<group>"; };
 		0D7C11DDC067A610472091CD /* Pods_FireBasic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireBasic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E0CF2F31EEDF91F00D99EDF /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3E3799D91EECB7BF0066149B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3ED895EF1EECB5AD00DB56E7 /* FireBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ED895F21EECB5AD00DB56E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				3E3799D91EECB7BF0066149B /* GoogleService-Info.plist */,
 				3EE16A111EECBA6F000F0BB6 /* WeatherViewController.swift */,
 				3EE16A131EECC0AF000F0BB6 /* AuthViewController.swift */,
+				3E0CF2F31EEDF91F00D99EDF /* SignUpViewController.swift */,
 			);
 			path = FireBasic;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			files = (
 				3ED895F31EECB5AD00DB56E7 /* AppDelegate.swift in Sources */,
 				3EE16A141EECC0AF000F0BB6 /* AuthViewController.swift in Sources */,
+				3E0CF2F41EEDF91F00D99EDF /* SignUpViewController.swift in Sources */,
 				3EE16A121EECBA6F000F0BB6 /* WeatherViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
