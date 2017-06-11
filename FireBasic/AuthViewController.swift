@@ -40,7 +40,11 @@ class AuthViewController: UIViewController, GIDSignInUIDelegate {
         
         if let email = emailTextField.text, let password = passwordTextField.text {
             Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
-                
+                if user != nil {
+                    self.performSegue(withIdentifier: "SegueToWeatherViewController", sender: self)
+                } else {
+                    print(error?.localizedDescription)
+                }
             }
         }
         
