@@ -13,7 +13,7 @@ class WeatherViewController: UIViewController {
     
     @IBOutlet weak var conditionLabel: UILabel!
     
-    let conditionRef = FIRDatabase.database().reference().child("condition")
+    let conditionRef = Database.database().reference().child("condition")
 
 
     override func viewDidLoad() {
@@ -26,7 +26,7 @@ class WeatherViewController: UIViewController {
         super.viewDidAppear(true)
         
         
-        conditionRef.observe(.value) { (snap: FIRDataSnapshot) in
+        conditionRef.observe(.value) { (snap: DataSnapshot) in
             
             self.conditionLabel.text = snap.value as! String
         }

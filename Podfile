@@ -8,5 +8,7 @@ target 'FireBasic' do
   # Pods for FireBasic
   pod 'Firebase/Core'
   pod 'Firebase/Database'
-
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
+ 
 end

@@ -14,6 +14,7 @@
 		3ED895FA1EECB5AD00DB56E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED895F91EECB5AD00DB56E7 /* Assets.xcassets */; };
 		3ED895FD1EECB5AD00DB56E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED895FB1EECB5AD00DB56E7 /* LaunchScreen.storyboard */; };
 		3EE16A121EECBA6F000F0BB6 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE16A111EECBA6F000F0BB6 /* WeatherViewController.swift */; };
+		3EE16A141EECC0AF000F0BB6 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE16A131EECC0AF000F0BB6 /* AuthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		3ED895FC1EECB5AD00DB56E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3ED895FE1EECB5AE00DB56E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EE16A111EECBA6F000F0BB6 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		3EE16A131EECC0AF000F0BB6 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		AF0A6AB51DB1E0B2A6189D80 /* Pods-FireBasic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireBasic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireBasic/Pods-FireBasic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +72,7 @@
 				3ED895FE1EECB5AE00DB56E7 /* Info.plist */,
 				3E3799D91EECB7BF0066149B /* GoogleService-Info.plist */,
 				3EE16A111EECBA6F000F0BB6 /* WeatherViewController.swift */,
+				3EE16A131EECC0AF000F0BB6 /* AuthViewController.swift */,
 			);
 			path = FireBasic;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3ED895F31EECB5AD00DB56E7 /* AppDelegate.swift in Sources */,
+				3EE16A141EECC0AF000F0BB6 /* AuthViewController.swift in Sources */,
 				3EE16A121EECBA6F000F0BB6 /* WeatherViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
