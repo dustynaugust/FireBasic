@@ -12,8 +12,10 @@ import Firebase
 class WeatherViewController: UIViewController {
     
     @IBOutlet weak var conditionLabel: UILabel!
+    @IBOutlet weak var previousEmailLabel: UILabel!
     
     let conditionRef = Database.database().reference().child("condition")
+    let prevEmailRef = Database.database().reference().child("previous_email")
 
 
     override func viewDidLoad() {
@@ -27,17 +29,25 @@ class WeatherViewController: UIViewController {
         
         
         conditionRef.observe(.value) { (snap: DataSnapshot) in
-            
             self.conditionLabel.text = snap.value as! String
         }
+        
+        prevEmailRef.observe(.value) { (snap: DataSnapshot) in
+            self.previousEmailLabel.text = snap.value as! String
+        }
+        
     }
+    
     
     @IBAction func sunnyButtonTapped(_ sender: Any) {
         conditionRef.setValue("Sunny")
+        prevEmailRef.setValue(Auth.auth().currentUser?.email)
+        
     }
     
     @IBAction func foggyButtonTapped(_ sender: Any) {
         conditionRef.setValue("Foggy")
+        prevEmailRef.setValue(Auth.auth().currentUser?.email)
     }
     
 
