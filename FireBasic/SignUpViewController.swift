@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseAuth
 
 class SignUpViewController: UIViewController {
@@ -14,6 +15,10 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
   
     @IBOutlet weak var passwordTextField: UITextField!
+
+    
+    var databaseRef: DatabaseReference!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +32,20 @@ class SignUpViewController: UIViewController {
         if let email = emailTextField.text, let password = passwordTextField.text {
             
             Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
+                
+                self.databaseRef = Database.database().reference()
+                
+                
+                self.databaseRef.child("users").child(user!.uid).observeSingleEvent(of: .value, with: { (snapshot) in
+                    let snapshot = snapshot.value as? NSDictionary
+                    
+                    if(snapshot == nil) {
+                        self.databaseRef.child("users").child(user!.uid).child("name").setValue(user?.displayName)
+                        self.databaseRef.child("users").child(user!.uid).child("email").setValue(user?.email)
+                    }
+                })
+
+                
                 if user != nil {
                     self.performSegue(withIdentifier: "SignUpToWeather", sender: self)
                 } else {
@@ -34,10 +53,10 @@ class SignUpViewController: UIViewController {
                 }
             })
             
-        }
+            
         
         
-        
+            }
     }
     
     
